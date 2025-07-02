@@ -167,8 +167,11 @@ db.projects.aggregate([
     $project: {
       _id: 1,
       title: 1,
-      studentName: "$students.name",
-      studentEmail: "$students.email"
+      student_name: "$students.name",
+      student_email: "$students.email"
     }
   }
 ])
+
+
+db.projects.inser
